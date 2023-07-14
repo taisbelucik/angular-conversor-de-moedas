@@ -50,12 +50,13 @@
 			data-target="#modalCotacao"
 			(click)="converter()"
 			[disabled]="!conversaoForm.form.valid">
+      {{ conversaoResponse | json }}
 	  </form>
 	 </div>
-	 <!-- <modal-cotacao
+	 <modal-cotacao
         [id]="'modalCotacao'"
         [conversaoResponse]="conversaoResponse"
 		[conversao]="conversao"
         (onConfirm)="init()">
-    </modal-cotacao> -->
+    </modal-cotacao>
 </div>
